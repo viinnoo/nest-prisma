@@ -8,7 +8,7 @@
   "scripts": {
     "prisma:deploy": "prisma migrate deploy",
     "postinstall": "prisma generate",
-    "build": "nest build",
+    "build": "tsc -p tsconfig.build.json",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
     "start:dev": "nest start --watch",
