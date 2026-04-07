@@ -23,8 +23,6 @@ export class AuthController {
     );
   }
 
-  @UseGuards(JwtAuthGuard, RolesGuard)
-  @Roles(UserRole.ADMIN,)
   @ApiOperation({ summary: 'Register a new user (Only for Admin)' })
   @Post('register')
   register(@Body() dto: RegisterDto) {
